@@ -23,7 +23,7 @@
     <LinearLayout
         android:id="@+id/line1"
         android:layout_width="352dp"
-        android:layout_height="78dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/quiz_title"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp">
@@ -40,11 +40,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_field"
-            android:layout_width="150dp"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
             android:hint="Enter your name"
             android:textColor="@color/gray200"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -70,11 +70,72 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_field"
-            android:layout_width="150dp"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
             android:hint="Enter your email"
             android:textColor="@color/gray200"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <!-- Height -->
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/line4"
+        android:layout_marginTop="0dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/user_height"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height_field"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your height"
+            android:inputType="numberDecimal"
+            android:textColor="@color/gray200"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- Weight -->
+    <LinearLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/line5"
+        android:layout_marginTop="0dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/user_weight"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight_field"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your weight"
+            android:inputType="numberDecimal"
+            android:textColor="@color/gray200"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -100,12 +161,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_field"
-            android:layout_width="150dp"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
             android:hint="Enter your password"
             android:inputType="textPassword"
             android:textColor="@color/gray200"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -131,12 +192,12 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/confirm_password_field"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Re-enter your password"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:hint="Re-enter password"
             android:inputType="textPassword"
             android:textColor="@color/gray200"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -146,7 +207,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/line4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="140dp"
         android:text="Register" />
 
 </RelativeLayout>
